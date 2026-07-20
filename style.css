@@ -525,3 +525,53 @@ footer {
         text-align: center;
     }
 }
+
+/* =======================================================
+   ট্যাবলেট ভিউ (ট্যাবলেট বা ছোট ল্যাপটপ স্ক্রিনের জন্য)
+   ======================================================= */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.8rem !important; /* টাইটেল একটু ছোট হবে */
+    }
+}
+
+/* =======================================================
+   মোবাইল ভিউ (সব ধরণের স্মার্টফোনের জন্য)
+   ======================================================= */
+@media (max-width: 600px) {
+    /* মূল কন্টেইনারের দুই পাশের জায়গা (Padding) কমানো */
+    body {
+        padding: 20px 15px !important;
+    }
+
+    /* "Machine Learning & DATA Enthusiast" টাইটেলটি মোবাইলের স্ক্রিন অনুযায়ী ছোট হবে */
+    h1 {
+        font-size: 2rem !important; 
+        line-height: 1.3 !important;
+    }
+
+    /* "specializing in Data Intelligence..." লেখাটির সাইজ */
+    h2, p {
+        font-size: 1rem !important;
+    }
+
+    /* ৩+ Projects, ৫+ Libraries - এগুলো মোবাইলে পাশাপাশি না থেকে একটার নিচে আরেকটা আসবে */
+    .stats-container {
+        flex-direction: column !important;
+        gap: 20px !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* "Connect with me" এবং "View Projects" বাটন দুটি একটার নিচে আরেকটা আসবে */
+    .cta-buttons {
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 15px !important;
+    }
+
+    .cta-buttons a, .cta-buttons button {
+        width: 100% !important; /* বাটনগুলো পুরো স্ক্রিন জুড়ে সুন্দর দেখাবে */
+        text-align: center !important;
+    }
+}
